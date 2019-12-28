@@ -1,0 +1,201 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bj" >
+
+     <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <!-- +++++++++++++++++++++++++++++++++++++++++免责声明+++++++++++++++++++++++++++++++++++++ -->        
+            <TextView
+            android:id="@+id/tvNoDuty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="免责声明"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+         <TextView
+            android:id="@+id/tvNoDutyContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="声明：该软件只用于学习研究娱乐，使用者不得用该软件进行违法活动，本人一概不承担任何法律责任，如使用者使用，即表示同意。"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+ <!-- ++++++++++++++++++++++++++++++++++++++++牛牛开关+++++++++++++++++++++++++++++++++++++ -->
+
+        <Switch
+            android:id="@+id/swNn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textOn="启用"
+            android:textOff="关闭"
+            android:text="自动砍价" />
+        <Switch
+            android:id="@+id/swData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textOn="启用"
+            android:textOff="关闭"
+            android:checked="true"
+            android:text="采集开关" />
+
+  <!-- +++++++++++++++++++++++备注 +++++++++++++++++++++++++++++++++++++++++++ -->
+   <TextView
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/nn_remark"
+            android:textColor="#00ff00"
+            android:textSize="16sp" />
+ <!-- +++++++++++++++++++++++语音模式 +++++++++++++++++++++++++++++++++++++++++++ -->
+        <TextView
+            android:id="@+id/tvSelSoundMode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请选择发音模式："
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+  			<com.example.h3.FlowRadioGroup
+                android:id="@+id/rgSelSoundMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/rbFemaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="女声" />
+                <RadioButton
+                    android:id="@+id/rbMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男声" />
+                <RadioButton
+                    android:id="@+id/rbSpecialMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="特别男声" />
+                <RadioButton
+                    android:id="@+id/rbMotionMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="情感男声" />
+                 <RadioButton
+                    android:id="@+id/rbChildrenSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="情感儿童声" />
+                <RadioButton
+                    android:id="@+id/rbCloseSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关闭语音提示" />
+           </com.example.h3.FlowRadioGroup> 
+      
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/float_button_get"
+                android:text="开启砍价服务" />
+            <Button
+                android:id="@+id/btRunGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/float_button_get"
+                android:text="启动拼多多" />
+  			<Button
+                android:id="@+id/btClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/float_button_get"
+                android:text="关闭" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRegState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="授权状态：未授权"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvRegWarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="警告：未授权用户砍价功能有所限制！技术及授权联系QQ：1339524332微信byc63520。"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+       <TextView
+            android:id="@+id/tvHomePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:text="官方下载地址：\nhttp://119.23.68.205/android/android.htm"
+            android:textColor="#0000ff"
+            android:textSize="16sp" />
+       <TextView
+            android:id="@+id/tvRemark1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="使用说明：部分机型进入拼多多后不显示【开始砍价】悬浮窗口，请到手机设置里面设置允许软件显示悬浮窗口。"
+            android:textColor="#ffff00"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tvPlease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请输入授权码："
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etRegCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="12" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/float_button_get"
+            android:text="确定" />
+    </LinearLayout>
+
+</ScrollView>

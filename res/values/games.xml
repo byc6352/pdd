@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrGames">
+        <item>请选择棋牌游戏类别</item>
+        <item>微信棋牌</item>
+        <item>牛总管</item>
+        <item>牛元帅</item>
+        <item>牛小帅</item>
+        <item>闲来牛牛</item>
+        <item>阿拉斗牛</item>
+        <item>欢乐斗牛</item>
+        <item>锐游斗牛</item>
+        <item>对战斗牛</item>
+        <item>天天斗牛</item>
+        <item>扎金花真欢乐</item>
+        <item>金博棋牌</item>
+    	<item>其它棋牌牛牛游戏通用</item>  
+    </string-array>
+</resources>
